@@ -1,0 +1,8 @@
+<div class="card" (click)="cardClicked.emit()" [@cardFlip]="card.state">
+  <div class="back">
+    <img src="assets/uno-card.jpg">
+  </div>
+  <div class="front">
+    <img [src]="card.imageUrl">
+  </div>
+</div>
